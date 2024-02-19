@@ -5,6 +5,8 @@ const router=express.Router();
 
 // Product Routing
 router.get('/ProductBrandList',ProductController.ProductBrandList);
+
+
 router.get('/ProductCategoryList',ProductController.ProductCategoryList);
 router.get('/ProductSliderList',ProductController.ProductSliderList);
 router.get('/ProductDetails/:ProductId',ProductController.ProductDetails);

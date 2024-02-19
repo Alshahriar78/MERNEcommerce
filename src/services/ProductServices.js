@@ -17,6 +17,7 @@ const BrandListService=async ()=>{
    catch (e){
        return {status:"Failed", data:e}.toString();
    }
+
 }
 const CategoryListService=async ()=>{
     try{
@@ -157,19 +158,23 @@ const ListByKeywordService=async ()=>{
 const ReviewListService=async ()=>{
 
 }
-
-module.exports={
-    BrandListService,
-    CategoryListService,
-    SliderListService,
-    DetailsService,
-    ListByBrandsService,
-    ListByCategoryService,
-    ListBySimilarService,
-    ListByKeywordService,
-    ListByRemarkService,
-    ReviewListService,
-
-
-
+const saurov=()=>{
+    console.log("Al Shahriar")
 }
+// module.exports={
+//     saurov,
+//     BrandListService,
+//     CategoryListService,
+//     SliderListService,
+//     DetailsService,
+//     ListByBrandsService,
+//     ListByCategoryService,
+//     ListBySimilarService,
+//     ListByKeywordService,
+//     ListByRemarkService,
+//     ReviewListService,
+
+
+
+// }
+// module.exports= {BrandListService}

@@ -1,19 +1,13 @@
+const {BrandListService,saurov} = require("../services/ProductServices");
 
-const { BrandListService,
-    CategoryListService,
-    SliderListService,
-    DetailsService,
-    ListByBrandsService,
-    ListByCategoryService,
-    ListBySimilarService,
-    ListByKeywordService,
-    ListByRemarkService,
-    ReviewService} = require('../services/ProductServices')
+console.log(saurov)
 
+console.log(BrandListService);
 
 exports.ProductBrandList= async (req,res)=>{
-  let result= await BrandListService();
-  return res.status(200).json(result);
+     let result=await  BrandListService();
+
+  return res.status(200).json('result');
 }
 
 exports.ProductCategoryList= async (req,res)=>{
